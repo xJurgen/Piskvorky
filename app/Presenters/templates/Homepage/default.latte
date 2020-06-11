@@ -1,0 +1,8 @@
+{block content}
+	<h1 n:block="title">Hlavni strana</h1>
+	<div n:foreach="$posts as $post" class="post">
+		<h2><a n:href="Post:show $post->id">{$post->title}</a></h2>
+	</div>
+
+	<h2><a n:href="Piskvorky:default">Piskvorky</a></h2>
+{/block}

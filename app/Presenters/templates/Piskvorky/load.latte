@@ -1,0 +1,7 @@
+{block content}
+    <div n:foreach="$games as $game" class="">
+        <h2><a n:href="Piskvorky:game $game->id">Nacist hru #{$game->id}</a></h2>
+    </div>
+
+    <p><a n:href="Piskvorky:default">← Zpet do menu</a></
+{/block}

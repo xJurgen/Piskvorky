@@ -1,0 +1,10 @@
+{block content}
+    <h2>Aktualni nastaveni hry #{$game->id}:</h2>
+    <h3>Rozmery hraciho pole: {$N}x{$M}</h3>
+    <h3>Zacina hrac: {$move}</h3>
+    <p>Nastaveni hry je mozno zmenit <a n:href="Piskvorky:settings $game->id">zde</a></p>
+
+    <h2><a n:href="Piskvorky:game $game->id">Spustit hru</h2>
+
+    <p><a n:href="Piskvorky:default">← Zpet do menu</a></p>
+{/block}

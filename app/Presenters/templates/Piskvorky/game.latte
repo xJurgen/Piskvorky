@@ -1,0 +1,28 @@
+{block content}
+    <h1>Piskvorky</h1>
+    <p>Nyni na tahu:{$move}</p>
+    {*var_dump($positions)*}
+    <div class="table">
+        <table border="1px solid black" style="fixed">
+            {var $index = 0}
+            {for $i = 0; $i < $N; $i++}
+                <col width="50px"/>
+                <tr>
+                    {for $j = 0; $j < $M; $j++, $index++}
+                        {if $positions[$index] != "-"}
+                            <td width="10px"><a style="color: {if $positions[$index] == "X"} red {else} blue {/if}">&nbsp;|{$positions[$index]}|&nbsp;</a></td>
+                        {elseif $game_status != 1}
+                            <td width="10px">&nbsp;&nbsp;<a n:href="PlayButton! index=>$index" class="button">&nbsp;&nbsp;  </a></td>
+                        {else}
+                            <td width="10px"><a style="color:black">&nbsp;|{$positions[$index]}|&nbsp;</a></td>
+                        {/if}
+                    {/for}
+                </tr>
+            {/for}
+        </table>
+    </div>
+
+    <p><a n:href="Piskvorky:settings $game->id">Nastaveni</a>&nbsp;&nbsp;&nbsp;&nbsp;<a n:href="Piskvorky:load">Nacist hru</a></p></p>
+    <p><a n:href="Piskvorky:default">← Zpet do menu</a></p>
+{/block}
+
