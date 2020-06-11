@@ -23,22 +23,22 @@ Make directories `temp/` and `log/` writable.
 
 Make database named `piskvorky` containing table `game_info` using commands:
 
-`CREATE DATABASE piskvorky;
-
-CREATE TABLE `game_info` (
-  `id` int(11) NOT NULL,
-  `positions` text,
-  `creation_date` text NOT NULL,
-  `board_size` text NOT NULL,
-  `move` text NOT NULL,
-  `has_ended` int(11) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
-
-ALTER TABLE `game_info`
-  ADD PRIMARY KEY (`id`);
-
-ALTER TABLE `game_info`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;`
+> CREATE DATABASE piskvorky;
+>
+>CREATE TABLE `game_info` (
+>  `id` int(11) NOT NULL,
+>  `positions` text,
+>  `creation_date` text NOT NULL,
+>  `board_size` text NOT NULL,
+>  `move` text NOT NULL,
+>  `has_ended` int(11) NOT NULL
+>) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+>
+>ALTER TABLE `game_info`
+>  ADD PRIMARY KEY (`id`);
+>
+>ALTER TABLE `game_info`
+>  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
 
 Web Server Setup
 ----------------
