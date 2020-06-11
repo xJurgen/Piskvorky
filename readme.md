@@ -8,6 +8,7 @@ To run, switch to the project folder then use command:
 change "localhost" and 8000 to server IP and port you wish to use (see Web Server Startup for more info).
 
 
+
 Installation
 ------------
 
@@ -20,6 +21,24 @@ download it following [the instructions](https://doc.nette.org/composer). Then u
 
 Make directories `temp/` and `log/` writable.
 
+Make database named `piskvorky` containing table `game_info` using commands:
+
+`CREATE DATABASE piskvorky;
+
+CREATE TABLE `game_info` (
+  `id` int(11) NOT NULL,
+  `positions` text,
+  `creation_date` text NOT NULL,
+  `board_size` text NOT NULL,
+  `move` text NOT NULL,
+  `has_ended` int(11) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+ALTER TABLE `game_info`
+  ADD PRIMARY KEY (`id`);
+
+ALTER TABLE `game_info`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;`
 
 Web Server Setup
 ----------------
