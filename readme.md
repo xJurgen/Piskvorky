@@ -43,12 +43,12 @@ Piskvorky (tic-tac-toe) app
 Application is located in /app/Presenters
 where
 
-HomepagePresenter.php - Main page of the website
-PiskvorkyPresenter.php - Main presenter of the application
-PiskvorkyGameLogic.php - Tic-tac-toe game logic class
-Piskvorky/default.latte - default page to be rendered when open
-Piskvorky/newgame.latte - page containing information about newly created game
-Piskvorky/load.latte - page containing list of all saved games. Games are saved automatically when created.
-Piskvorky/settings.latte - page containing settings of currently selected game
-Piskvorky/game.latte - page containing game itself
+`HomepagePresenter.php` - Main page of the website
+`PiskvorkyPresenter.php` - Main presenter of the application
+`PiskvorkyGameLogic.php` - Tic-tac-toe game logic class
+`Piskvorky/default.latte` - default page to be rendered when open
+`Piskvorky/newgame.latte` - page containing information about newly created game
+`Piskvorky/load.latte` - page containing list of all saved games. Games are saved automatically when created.
+`Piskvorky/settings.latte` - page containing settings of currently selected game
+`Piskvorky/game.latte` - page containing game itself
 
